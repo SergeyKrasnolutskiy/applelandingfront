@@ -1,0 +1,79 @@
+.topline{
+  @include wrapper();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $gray;
+  border-radius: 0px 0px 15px 15px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  a,p{
+    color: #fff;
+    text-decoration: none;
+  }
+  &_logo{
+    display: flex;
+    flex-direction: column;
+    @include size(3);
+    .main{
+      display: flex;
+      .logo_text{
+        .name,.description{
+          margin: 0px;
+          margin-left: 20px;
+        }
+        .name{
+          font-size: 24px;
+          font-weight: 300;
+        }
+        .description{
+          font-size: 24px;
+          color: #acacac;
+          font-weight: 300;
+        }
+      }
+    }
+    .contacts{
+      display: flex;
+      margin-top: 25px;
+      .item{
+        display: flex;
+        margin-right: 15px;
+        p{
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  &_description{
+    padding-bottom: 10px;
+    @include size(5);
+    p{
+      font-size: 24px;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+  &_contact{
+    @include size(3);
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    a.tel{
+      text-align: right;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    p.tel_description{
+      text-align: right;
+    }
+    .social{
+      margin-top: 15px;
+      display: flex;
+      justify-content: flex-end;
+      a{
+        margin-left: 10px;
+      }
+    }
+  }
+}
