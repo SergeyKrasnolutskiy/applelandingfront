@@ -1,0 +1,41 @@
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-email {
+  width: 18px;
+  height: 18px;
+  background-position: -5px -5px;
+}
+
+.sprite-fb {
+  width: 40px;
+  height: 40px;
+  background-position: -33px -5px;
+}
+
+.sprite-insta {
+  width: 41px;
+  height: 41px;
+  background-position: -5px -55px;
+}
+
+.sprite-logo {
+  width: 42px;
+  height: 50px;
+  background-position: -56px -55px;
+}
+
+.sprite-telegram {
+  width: 18px;
+  height: 18px;
+  background-position: -83px -5px;
+}
+
+.sprite-vk {
+  width: 40px;
+  height: 40px;
+  background-position: -111px -5px;
+}
