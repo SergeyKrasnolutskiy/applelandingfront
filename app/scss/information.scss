@@ -7,6 +7,7 @@
   justify-content: space-between;
   &_item{
     @include size(3);
+    @include col();
     padding: 30px 15px 30px 15px;
     background-color: #fff;
     display: flex;

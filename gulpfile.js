@@ -107,4 +107,4 @@ gulp.task('clean-img', function () {
     return gulp.src('dist/img', {read: false})
         .pipe(clean());
 });
-gulp.task('server', ['browser','watcher', 'clean-dist']);
+gulp.task('server', ['browser','watcher']);
