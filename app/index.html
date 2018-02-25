@@ -86,22 +86,22 @@
 <div class="menu">
     <nav>
         <ul>
-            <li><a href="#">Iphone SE</a></li>
-            <li><a href="#">Iphone 6</a></li>
-            <li><a href="#">Iphone 6 plus</a></li>
-            <li><a href="#">Iphone 6S</a></li>
-            <li><a href="#">Iphone 6S plus</a></li>
-            <li><a href="#">Iphone 7</a></li>
-            <li><a href="#">Iphone 7 plus</a></li>
-            <li><a href="#">Iphone 8</a></li>
-            <li><a href="#">Iphone 8 plus</a></li>
-            <li><a href="#">Iphone X</a></li>
+            <li class='menu_link'><a class="se" href="#IphoneSE">Iphone SE</a></li>
+            <li class='menu_link'><a href="#Iphone6">Iphone 6</a></li>
+            <li class='menu_link'><a href="#Iphone6plus">Iphone 6 plus</a></li>
+            <li class='menu_link'><a href="#Iphone6S">Iphone 6S</a></li>
+            <li class='menu_link'><a href="#Iphone6Splus">Iphone 6S plus</a></li>
+            <li class='menu_link'><a href="#Iphone7">Iphone 7</a></li>
+            <li class='menu_link'><a href="#Iphone7plus">Iphone 7 plus</a></li>
+            <li class='menu_link'><a href="#Iphone8">Iphone 8</a></li>
+            <li class='menu_link'><a href="#Iphone8plus">Iphone 8 plus</a></li>
+            <li class='menu_link'><a href="#IphoneX">Iphone X</a></li>
         </ul>
     </nav>
 </div>
 <div class="products">
     <div class="product iphone_SE">
-        <div class="product_image">
+        <div class="product_image" style="transition: 10s linear">
             <img src="../img/SE_rose.png" alt="">
             <img src="../img/SE_silver.png" alt="">
         </div>
@@ -156,10 +156,10 @@
                 </div>
                 <div class="buy-block">
                     <div class="buy-block_buttons">
-                        <div class="button-buy"></div>
-                        <div class="button-sale"></div>
+                        <div class="button-buy">Купить в один клик</div>
+                        <div class="button-sale">Хочу скидку</div>
                     </div>
-                    <div class="buy-block_form">
+                    <div class="buy-block_form" style="opacity: 0; position: absolute; right: 200px; transition: .3s linear">
                         <input type="name" placeholder="Введите ваше имя">
                         <input type="tel" placeholder="Ваш номер">
                         <input type="submit" name="Заказать" id="">
@@ -169,6 +169,11 @@
         </div>
     </div>
 </div>
+<!--<div class="timer">-->
+    <!--<div class="hours">16</div> часов-->
+    <!--<div class="minutes">01</div> минут-->
+    <!--<div class="seconds">03</div> секунд-->
+<!--</div>-->
 <link rel="stylesheet" href="css/main.css">
 <script src="js/scripts.min.js"></script>
 </body>

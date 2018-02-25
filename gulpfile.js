@@ -8,6 +8,7 @@ var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
 var smartgrid = require('smart-grid');
 var clean = require('gulp-clean');
+var connect = require('gulp-connect-php');
 
 gulp.task('smartgrid', function () {
     /* It's principal settings in smart grid project */
@@ -106,5 +107,12 @@ gulp.task('clean-dist', function () {
 gulp.task('clean-img', function () {
     return gulp.src('dist/img', {read: false})
         .pipe(clean());
+});
+gulp.task('connect', function() {
+    connect.server({
+        port: 8080,
+        hostname: 'localhost',
+        base: './dist'
+    });
 });
 gulp.task('server', ['browser','watcher']);
