@@ -45,14 +45,13 @@
 timer_obj.void();
 */
 
-
-// function show_buy(e) {
-//     var form = e.parentElement.parentNode.childNodes[3];
-//     console.log(form);
-//     form.css({
-//         'opacity' : 1,
-//         'position': 'relative',
-//         'right' : '0px',
-//         'z-index' : '1',
-//     });
-// }
+$('.button-buy').click(function (e) {
+    var form = e.target.parentElement.parentNode.childNodes[3];
+    console.log(form);
+    $(form).css({
+        'opacity' : 1,
+        'position': 'relative',
+        'right' : '0px',
+        'z-index' : '1',
+    });
+});
