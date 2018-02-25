@@ -1,0 +1,119 @@
+.products{
+  @include wrapper();
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  .product{
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.5);
+    align-items: stretch;
+    margin-bottom: 30px;
+    &_image{
+      @include size(5);
+      padding: 50px;
+    }
+    &_info{
+      @include size(7);
+      padding-top: 80px;
+      .info{
+        display: flex;
+        flex-wrap: wrap;
+        &_title{
+          @include col();
+          width: 100%;
+          font-size: 36px;
+          margin-bottom: 40px;
+        }
+        &_color, &_memory{
+          @include size(6);
+          @include col();
+          margin-bottom: 40px;
+          font-weight: 600;
+          span{
+            color: $light;
+          }
+        }
+        &_color{
+          .color{
+            margin-top: 10px;
+          }
+        }
+        &_memory{
+          .memory{
+            margin-top: 10px;
+          }
+        }
+        .buy-block{
+          width: 100%;
+          display: flex;
+          &_buttons, &_form{
+            @include size(6);
+            @include col();
+          }
+          &_buttons{
+            @at-root .button{
+              width: 100%;
+              font-size: 20px;
+              text-align: center;
+              background-color: $light;
+              color: #fff;
+              border-radius: 10px;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              margin-bottom: 15px;
+              border: 1px solid $light;
+              cursor: pointer;
+              transition: .3s;
+              &:hover{
+                background-color: #fff;
+                color: $light;
+                transition: .3s;
+              }
+              &._sale{
+                background-color: #fff;
+                color: $light;
+                transition: .3s;
+                &:hover{
+                  background-color: $light;
+                  color: #fff;
+                  transition: .3s;
+                }
+              }
+            }
+          }
+          &_form{
+            input[type="text"]{
+              box-sizing: border-box;
+              padding-left: 10px;
+              color: #000;
+              max-width: 100%;
+              width: 100%;
+              height: 55px;
+              margin-bottom: 15px;
+              border: 1px solid $light;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+    &.iphone_SE{
+      .product_image{
+        max-height: 500px;
+        position: relative;
+        img{
+          height: 380px;
+        }
+        img:last-child{
+          position: absolute;
+          left: 130px;
+        }
+        img:first-child{
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

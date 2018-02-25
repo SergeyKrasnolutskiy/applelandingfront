@@ -45,16 +45,14 @@
 timer_obj.void();
 */
 
-$(document).ready(
-    function show_buy() {
-    var button = $('.button-buy');
-    var form = $('.buy-block_form');
-    button[0].onclick = function (e) {
-        console.log(e);
-        form.css({
-            'opacity' : 1,
-            'position': 'relative',
-            'right' : '0px'
-        });
-    }
-});
+
+// function show_buy(e) {
+//     var form = e.parentElement.parentNode.childNodes[3];
+//     console.log(form);
+//     form.css({
+//         'opacity' : 1,
+//         'position': 'relative',
+//         'right' : '0px',
+//         'z-index' : '1',
+//     });
+// }

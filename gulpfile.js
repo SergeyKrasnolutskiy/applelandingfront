@@ -18,22 +18,22 @@ gulp.task('smartgrid', function () {
         offset: '30px', /* gutter width px || % */
         mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
         container: {
-            maxWidth: '1200px', /* max-width оn very large screen */
+            maxWidth: '980px', /* max-width оn very large screen */
             fields: '30px' /* side fields */
         },
         breakPoints: {
             lg: {
-                width: '1100px', /* -> @media (max-width: 1100px) */
+                width: '960px', /* -> @media (max-width: 1100px) */
             },
             md: {
-                width: '960px'
+                width: '780px'
             },
             sm: {
-                width: '780px',
+                width: '560px',
                 fields: '15px' /* set fields only if you want to change container.fields */
             },
             xs: {
-                width: '560px'
+                width: '320px'
             }
         }
     };
@@ -95,7 +95,9 @@ gulp.task('browser', function () {
             notify: false,
             port: 8080,
             watchOptions : {
-                ignored : 'node_modules/*',
+                ignored : [
+                    'node_modules/*'
+                ],
                 ignoreInitial : true
             }
     });
